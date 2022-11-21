@@ -11,8 +11,9 @@
 <body>
     <section class="header11">
         <nav>
-            <a href="index.html"><img src="img/Barbell-PNG-File-Download-Free.png"></a>
-
+            <div id = "logo">
+                <a href="index.html"><img src="img/Barbell-PNG-File-Download-Free.png" alt="obrazeczek"></a>
+            </div>
             <div class="navbar">
                 <a href="index.html"><strong>Strona główna</strong></a>
                 <div class="dropdown">
@@ -44,7 +45,7 @@
             <p>Podaj mi kilka informacji o sobie</p><br>
         </div>
         
-        </div>
+        
             
     </section>
     <section class="opis-zawodnika">
@@ -56,18 +57,24 @@
       </svg>
 
       <form>
-        <label for="fname">Imie</label><br>
+        <label for="fname"><strong>Imię</strong></label><br>
         <input type="text" id="fname" name="fname" value="Jan"><br>
-        <label for="lname">Nazwisko</label><br>
-        <input type="text" id="lname" name="lname" value="Kowalski"><br>
-        <p><strong>Ile miałeś kontuzji?</strong> </p>
 
+        <label for="lname"><strong>Nazwisko</strong></label><br>
+        <input type="text" id="lname" name="lname" value="Kowalski"><br>
+
+        <label><strong>Podaj datę urodzin</strong><input type="date" name="birthDate"></label><br>
+
+        <label for="waga"><strong>Waga [kg]</strong></label><br>
+        <input type="number" id="waga" name="waga" value="120"><br>
+
+        <p><strong>Ile miałeś kontuzji?</strong> </p>
         <input type="radio" id="0-2" name="kontuzje" value="od 0 do 2">
-         <label for="0-2">od 0 do 2</label><br>
-         <input type="radio" id="3-5" name="kontuzje" value="od 3 do 5">
-         <label for="3-5">od 3 do 5</label><br>
-         <input type="radio" id="Powyżej" name="kontuzje" value="Powyżej 5">
-         <label for="Powyżej 5"> Powyżej 5</label>
+        <label for="0-2">od 0 do 2</label><br>
+        <input type="radio" id="3-5" name="kontuzje" value="od 3 do 5">
+        <label for="3-5">od 3 do 5</label><br>
+        <input type="radio" id="5" name="kontuzje" value="Powyżej 5">
+        <label for="5"> Powyżej 5</label>
 
         <p><strong>W jakiej federacji starujesz?</strong> </p>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -78,7 +85,6 @@
         <label for="vehicle3">WPA</label><br>
 
         <p><strong>W jakich zawodach ostatnio startowałeś?</strong></p>
-
         <select>
             <optgroup label="Single lift">
               <option>Wyciskanie leżąc</option>
@@ -88,22 +94,22 @@
               <option>Kostiumy</option>
               <option>Taśmy na Kolana</option>
             </optgroup>
-          </select>
-        <br><input type="submit" value="Potwierdź">
+        </select>
+        <br><br>
+          <p><strong>Czy jesteś pewien swoich odpowiedzi?</strong></p>
+            <input type="submit" value="Potwierdź">
             <input type="Reset" value="Resetuj">
-        
-
       </form>
 
     <div class="gallery">
         <div class="image-box">
-            <img src="img/podsztanga1.png">
+            <img src="img/podsztanga1.png" alt="obrazeczek">
         </div>
         <div class="image-box">
-            <img src="img/podsztanga2.png">
+            <img src="img/podsztanga2.png" alt="obrazeczek">
         </div>
         <div class="image-box">
-            <img src="img/podsztanga4.jpg">
+            <img src="img/podsztanga4.jpg" alt="obrazeczek">
         </div>
     </div>
 
